@@ -17,9 +17,11 @@ def tv_py(double s, double k, double t,double v, double rf, double cp):
     return tv(s,k,t,v,rf,cp)
 
 def delta_py(double s, double k, double t,double v, double rf, double cp):
+    """ S,K,t,v,rf,cp"""
     return delta(s,k,t,v,rf,cp)
 
 def vega_py(double s, double k, double t,double v, double rf, double cp):
+    """ S,K,t,v,rf,cp"""
     return vega(s,k,t,v,rf,cp)
 
 cdef double approximate_abs_delta(double s, double k, double t,double v, double rf, double cp):
